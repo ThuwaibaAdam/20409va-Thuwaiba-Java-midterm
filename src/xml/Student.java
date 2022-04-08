@@ -2,7 +2,8 @@ package xml;
 
 import java.io.Serializable;
 
-public class Student implements Serializable {
+public class
+Student implements Serializable {
 
     // Student class has 4 instance variables, which will be constructed as Student Object into List<Student>
     public String firstName;

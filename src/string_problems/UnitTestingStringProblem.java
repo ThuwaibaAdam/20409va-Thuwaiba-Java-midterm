@@ -8,5 +8,10 @@ public class UnitTestingStringProblem {
 
     public static void main(String[] args) {
 
+        String str1 = "ACT";
+        String str2 = "CAT";
+       boolean anagramResult = Anagram.anagramCheck("ACT","CAT");
+       //System.out.println("Both String are Anagram " + anagramCheck( "ACT","CAT"));
+        System.out.println("Both String are Anagram " + anagramResult);
     }
 }

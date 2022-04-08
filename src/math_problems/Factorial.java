@@ -13,5 +13,19 @@ public class Factorial {
 
 
     }
+    public static int factorial(int n){
+
+        if (n == 1){
+            return 1;
+        } else {
+            return n * factorial(n-1);
+        }
+    }
+    public static int factorialIteration(int x){
+    int m =1;
+    for (int i =x; i>1;i--){
+    m = m*i;
+    }
+    return m;}
 
 }
