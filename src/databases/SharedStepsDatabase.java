@@ -52,7 +52,8 @@ public class SharedStepsDatabase {
         }
     }
 
-    private static Properties loadProperties() throws IOException {
+    //private static Properties loadProperties() throws IOException {
+        public static Properties loadProperties() throws IOException {
         Properties prop = new Properties();
         InputStream ism = new FileInputStream("src/secret.properties");
         prop.load(ism);
@@ -65,7 +66,8 @@ public class SharedStepsDatabase {
      * @param query The SQL query to be executed
      * @return The resultSet
      */
-    private ResultSet executeQuery(String query) {
+   // private ResultSet executeQuery(String query) {
+        public ResultSet executeQuery(String query) {
         try {
             statement = connect.createStatement();
             resultSet = statement.executeQuery(query);
@@ -248,7 +250,9 @@ public class SharedStepsDatabase {
      * Closes all static resources
      */
 
-    private static void closeResources() {
+
+   // private static void closeResources() {
+    public static void closeResources() {
         try {
             if (resultSet != null) {
                 resultSet.close();

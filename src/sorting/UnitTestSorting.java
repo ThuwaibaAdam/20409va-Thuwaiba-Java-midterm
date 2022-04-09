@@ -15,11 +15,20 @@ public class UnitTestSorting {
         // Create instance of Sort class
         Sorting sorting = new Sorting();
 
+       //int []selectionSortResult =sorting.selectionSort(unSortedArray);
+        // print selection sort result
+         //now  Sorting.printSortedArray(unSortedArray);
+
+
         // Pass the unsorted array to selectionSort() method (or any method you want to unit test) from Sort class
-        sorting.selectionSort(unSortedArray);
+       //now  int []selectionSortResult=sorting.selectionSort(unSortedArray);
 
         // Verify if the unsorted array is sorted by the desired method
-        Assert.assertEquals(unSortedArray, sortedArray, "ARRAY IS NOT SORTED... YET!");
+       //now  Assert.assertEquals(unSortedArray, sortedArray, "ARRAY IS NOT SORTED... YET!");
 
+        // Pass the unsorted array to bubble Sort() method
+       //now  int []bubbleSortresult = sorting.bubbleSort(unSortedArray);
+        // print bubble sort result
+        // now Sorting.printSortedArray(bubbleSortresult);
     }
 }
