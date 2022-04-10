@@ -19,7 +19,7 @@ public class CsvReader {
 
     public static void main(String[] args) {
 
-        String csvFilePath = System.getProperty("user.dir") + "/src/codelab/status/roster.csv";
+        String csvFilePath = System.getProperty("user.dir") + "\\src\\codelab\\data\\roster.csv";
         String row;
         String csvSplitBy = ",";
         BufferedReader br;
@@ -36,20 +36,39 @@ public class CsvReader {
                 String[] rowArray = row.split(csvSplitBy);
                 roster.add(new Student(rowArray[5].replace("\"", ""), rowArray[4].replace("\"",
                         ""), Integer.parseInt(rowArray[10])));
+                System.out.println(roster.size());
+               // System.out.println(roster.get(rowArray));
+                //System.out.println(roster.add(
+
             }
+
+               // int [] columnNum =
+
+
+           // String [] columArray =
         } catch (IOException e) {
             e.printStackTrace();
         }
 
         Collections.sort(roster);
 
-        for (Student student : roster) {
-            System.out.println(convertNumberOfProblemsSolved(student));
-        }
+       //for (Student student : roster) {
+           // System.out.println(student.getNumberOfExercisesSolved());
+          //  System.out.println(convertNumberOfProblemsSolved(student));
+       // }
+        //Student student1 = new Student("Abdi","adam",201);
+
+       // for (Student student : roster) {
+         // System.out.println(student.getCorrectUnassigned()
+          //);
+            //System.out.println(convertNumberOfProblemsSolved(student));
+      // }
+
+
     }
 
-    private static String convertNumberOfProblemsSolved(Student student) {
-        String name = student.getFirstName();
+  /*  private static String convertNumberOfProblemsSolved(Student student) {
+        String name = student.getFirstName();//getFirstName();
 
         if (student.getNumberOfExercisesSolved() >= 250) {
             return name + " is a QA Engineer in the making";
@@ -64,5 +83,5 @@ public class CsvReader {
         } else {
             return "Very low effort. Not a good sign, " + name;
         }
-    }
+    }*/
 }
